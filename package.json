@@ -9,6 +9,7 @@
   "author": "Nhlalala Shiburi",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.10.0"
+    "node-sass": "^4.10.0",
+    "npm": "^6.6.0"
   }
 }

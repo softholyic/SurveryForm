@@ -5,51 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <title>Template</title>
+    <title>Survey Form</title>
 </head>
 <body>
-    <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait">
-
-                </div>
-
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item current">
-                    <a href="/" class="nav-link">
-                        Home
-                    </a>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="/" class="nav-link">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/" class="nav-link">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/" class="nav-link">
-                        Home
-                    </a>
-                </li>
-
-
-            </ul>
-        </nav>
-    </header>
+    
 
     <main id="home">
+
+        <h1 id="title">Survey Form</h1>
+
+        <p id="description">This shoould say </p>
+        <form id="survey-form" action="" method="post">
+
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter name" required>
+
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" name="email;" id="email" placeholder="you@yourdomain.com" required>
+            
+            <label id="number-label" for="number">Number:</label>
+            <input type="number" name="number;" id="number" placeholder="Enter Number" min="1" max="10">
+
+            <label id="dropdown-label" for="dropdown">Which city are you based in:</label>
+            <select name="dropdown" id="dropdown">
+                <option value="Select City" disabled selected>Select City</option>
+                <option value="Cape Town">Cape Town</option>
+                <option value="Joburg">Joburg</option>
+                <option value="Rustenburg">Rustenburg</option>
+                <option value="Polokwane">Polokwane</option>
+                <option value="Durban">Durban</option>
+            </select>
+            
+            <label id="happy-label" for="happiness">Are you happy:</label>
+            <ol style="list-style: none;">
+                <li>
+                    <label>
+                            <input type="radio" name="happiness" id="yes">YES :D
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                            <input type="radio" name="happiness" id="no">No :(
+                    </label>
+                </li>
+            </ol>
+
+            <label id="gear-label" for="gear">Which devices do you own:</label>
+            <ol style="list-style: none;">
+
+                <li>
+                    <label>
+                            <input type="checkbox" name="Phone" id="Phone" value="1">Phone
+                    </label>
+                </li>
+                
+                <li>
+                    <label>
+                            <input type="checkbox" name="Tablet" id="Tablet" value="2">Tablet
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                            <input type="checkbox" name="Laptop" id="Laptop" value="3">Laptop
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                            <input type="checkbox" name="Camera" id="Camera" value="4">Camera
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                            <input type="checkbox" name="Drone" id="Drone" value="5">Drone
+                    </label>
+                </li>
+
+            </ol>
+
+            <label for="explain-label">Did we leave anything??</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            
+
+           
+            
+            
+            
+            <button type="submit">Submit</button>
+        </form>
 
     </main>
     <script src="js/main.js"></script>
