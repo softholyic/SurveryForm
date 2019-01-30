@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,97 +8,177 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Survey Form</title>
 </head>
+
 <body>
-    
+
 
     <main id="home">
 
         <h1 id="title">Survey Form</h1>
 
         <p id="description">This shoould say </p>
-        <form id="survey-form" action="" method="post">
+        <div class="container">
+            <form id="survey-form" action="" method="post">
 
-            <label id="name-label" for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Enter name" required>
+                <div class="row">
 
-            <label id="email-label" for="email">Email:</label>
-            <input type="email" name="email;" id="email" placeholder="you@yourdomain.com" required>
-            
-            <label id="number-label" for="number">Number:</label>
-            <input type="number" name="number;" id="number" placeholder="Enter Number" min="1" max="10">
+                    <div class="column-left">
 
-            <label id="dropdown-label" for="dropdown">Which city are you based in:</label>
-            <select name="dropdown" id="dropdown">
-                <option value="Select City" disabled selected>Select City</option>
-                <option value="Cape Town">Cape Town</option>
-                <option value="Joburg">Joburg</option>
-                <option value="Rustenburg">Rustenburg</option>
-                <option value="Polokwane">Polokwane</option>
-                <option value="Durban">Durban</option>
-            </select>
-            
-            <label id="happy-label" for="happiness">Are you happy:</label>
-            <ol style="list-style: none;">
-                <li>
-                    <label>
-                            <input type="radio" name="happiness" id="yes">YES :D
-                    </label>
-                </li>
+                        <label id="name-label" for="name">Name:</label>
 
-                <li>
-                    <label>
-                            <input type="radio" name="happiness" id="no">No :(
-                    </label>
-                </li>
-            </ol>
+                    </div>
 
-            <label id="gear-label" for="gear">Which devices do you own:</label>
-            <ol style="list-style: none;">
+                    <div class="column-right">
 
-                <li>
-                    <label>
-                            <input type="checkbox" name="Phone" id="Phone" value="1">Phone
-                    </label>
-                </li>
-                
-                <li>
-                    <label>
-                            <input type="checkbox" name="Tablet" id="Tablet" value="2">Tablet
-                    </label>
-                </li>
+                        <input type="text" class="input" name="name" id="name" placeholder="Enter name" required>
 
-                <li>
-                    <label>
-                            <input type="checkbox" name="Laptop" id="Laptop" value="3">Laptop
-                    </label>
-                </li>
+                    </div>
 
-                <li>
-                    <label>
-                            <input type="checkbox" name="Camera" id="Camera" value="4">Camera
-                    </label>
-                </li>
+                </div>
 
-                <li>
-                    <label>
-                            <input type="checkbox" name="Drone" id="Drone" value="5">Drone
-                    </label>
-                </li>
 
-            </ol>
+                <div class="row">
 
-            <label for="explain-label">Did we leave anything??</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            
+                    <div class="column-left">
 
-           
-            
-            
-            
-            <button type="submit">Submit</button>
-        </form>
+                        <label id="email-label" for="email">Email:</label>
+                    </div>
+
+                    <div class="column-right">
+                        <input type="email" class="input" name="email;" id="email" placeholder="you@yourdomain.com"
+                            required>
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="column-left">
+                        <label id="number-label" for="number">Number:</label>
+                    </div>
+
+                    <div class="column-right">
+                        <input type="number" class="input" name="number;" id="number" placeholder="Enter Number" min="1"
+                            max="10">
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="column-left">
+                        <label id="dropdown-label" for="dropdown">Which city are you based in:</label>
+                    </div>
+
+                    <div class="column-right">
+                        <select name="dropdown" id="dropdown" class="dropdown">
+                            <option value="Select City" disabled selected>Select City</option>
+                            <option value="Cape Town">Cape Town</option>
+                            <option value="Joburg">Joburg</option>
+                            <option value="Rustenburg">Rustenburg</option>
+                            <option value="Polokwane">Polokwane</option>
+                            <option value="Durban">Durban</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="column-left">
+                        <label id="happy-label" for="happiness">Are you happy:</label>
+                    </div>
+
+                    <div class="column-right">
+                        <ol style="list-style: none;">
+                            <li class="radio">
+                                <label>
+                                    <input type="radio" name="happiness" id="yes">YES :D
+                                </label>
+                            </li>
+
+                            <li class="radio">
+                                <label>
+                                    <input type="radio" name="happiness" id="no">No :(
+                                </label>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="column-left">
+                        <label id="gear-label" for="gear">Which devices do you own:</label>
+                    </div>
+
+                    <div class="column-right">
+                        <ol style="list-style: none;">
+
+                            <li class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="Phone" id="Phone" value="1">Phone
+                                </label>
+                            </li>
+
+                            <li class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="Tablet" id="Tablet" value="2">Tablet
+                                </label>
+                            </li>
+
+                            <li class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="Laptop" id="Laptop" value="3">Laptop
+                                </label>
+                            </li>
+
+                            <li class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="Camera" id="Camera" value="4">Camera
+                                </label>
+                            </li>
+
+                            <li class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="Drone" id="Drone" value="5">Drone
+                                </label>
+                            </li>
+
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="column-left">
+                        <label for="explain-label">Did we leave anything??</label>
+                    </div>
+
+                    <div class="column-right">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+
+                    <div class="column-left">
+                    </div>
+
+                    <div class="column-right">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
 
     </main>
     <script src="js/main.js"></script>
 </body>
+
 </html>

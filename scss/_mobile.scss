@@ -25,7 +25,13 @@
 //smartphones
 @include mediaSm {
 
-    
+   main{
+       .container{
+        .row{
+            flex-direction: column;  
+        }
+       }
+   } 
     
 
 }
