@@ -1,37 +1,62 @@
 //Widescreens
 
-@include mediaXL {
-
-    
-    
-}
+@include mediaXL {}
 
 //Desktops and laptops
-@include mediaLg {
-    
-    
-}
+@include mediaLg {}
 
 //Tablets and netbooks
 @include mediaMd {
+main{
+    .container {
+        .row {
+            .column-right {
+
+                .input {
+                    width: 28vw;
+                    height: 5vh;
+                }
+
+                textarea {
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 
 
-
-    
-    
-   
 }
 
 //smartphones
 @include mediaSm {
 
-   main{
-       .container{
-        .row{
-            flex-direction: column;  
+    main {
+        .container {
+            .row {
+                flex-direction: column;
+
+                .column-left {
+                    text-align: left;
+                    width: 100%;
+                    margin: 10px 10px 0px 10px;
+                }
+
+                .column-right {
+                    margin: 0px 10px 10px 10px;
+
+                    .input {
+                        width: 60vw;
+                        height: 5vh;
+                    }
+                }
+            }
         }
-       }
-   } 
-    
+    }
+
 
 }

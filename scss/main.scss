@@ -31,7 +31,7 @@ main {
         .row{
             display: flex;
             flex-direction: row;
-            height: 100%;
+            //height: 100%;
             justify-content: center;
 
             .column-left{
@@ -85,6 +85,19 @@ main {
                   textarea{
                       background-color:$primary-color;
                       border: 1px solid white;
+                  }
+                  button{
+                    
+                        background-color: #4CAF50; /* Green */
+                        border: none;
+                        color: white;
+                        padding: 15px 32px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        border-radius: 12px;
+                      
                   }
              }
 
